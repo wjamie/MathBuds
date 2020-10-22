@@ -1,2 +1,2 @@
-# COMP3000
+# Mathlab
 COMP3000 Final Year Project - Mathlab 
