@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\modules",
+    "\\modules\\tickets",
+    "\\modules\\tickets\\client",
+    "\\modules\\tickets\\server",
+    "\\modules\\tickets\\server\\policies"
+  ],
+  "SelectedNode": "\\modules\\tickets\\server\\policies\\tickets.server.policy.js",
+  "PreviewInSolutionExplorer": false
+}
