@@ -2,11 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\modules",
-    "\\modules\\tickets",
-    "\\modules\\tickets\\client",
     "\\modules\\tickets\\client\\controllers",
-    "\\modules\\tickets\\server\\policies"
+    "\\modules\\tickets\\server\\config",
+    "\\modules\\tickets\\server\\models",
+    "\\modules\\tickets\\server\\routes",
+    "\\modules\\tickets\\tests\\client",
+    "\\modules\\tickets\\tests\\e2e",
+    "\\modules\\tickets\\tests\\server",
+    "\\modules\\users\\client"
   ],
-  "SelectedNode": "\\modules\\tickets\\client\\controllers\\tickets.client.controller.js",
+  "SelectedNode": "\\modules\\tickets",
   "PreviewInSolutionExplorer": false
 }

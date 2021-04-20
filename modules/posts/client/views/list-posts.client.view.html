@@ -1,0 +1,24 @@
+<section>
+  <div class="page-header">
+    <h1>Mathematicians Posts</h1>
+  </div>
+  <div class="list-group">
+    <a ng-repeat="post in vm.posts"
+       ui-sref="posts.view({ postId: post._id })"
+       class="list-group-item">
+
+      <h4 class="list-group-item-heading" ng-bind="post.name" style="font-weight:600"></h4>
+      <p>{{post.desc}}</p>
+      <small class="list-group-item-text">
+        Post created on
+        <span ng-bind="post.created | date:'mediumDate'"></span>
+        by
+        <span ng-if="post.user" ng-bind="post.user.displayName"></span>
+        <span ng-if="!post.user">Deleted User</span>
+      </small>
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" ng-if="vm.posts.$resolved && !vm.posts.length">
+    No active posts at the moment!, but you can <a ui-sref="posts.create">create one</a>?
+  </div>
+</section>

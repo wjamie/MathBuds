@@ -1,0 +1,30 @@
+<section>
+  <div class="page-header">
+    <h1>{{vm.post._id ? 'Edit Post' : 'New Post'}}</h1>
+  </div>
+  <div class="col-md-12">
+    <form name="vm.form.postForm" class="form-horizontal" ng-submit="vm.save(vm.form.postForm.$valid)" novalidate>
+      <fieldset>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="name">Post Name</label>
+          <input name="name" type="text" ng-model="vm.post.name" id="name" class="form-control" placeholder="Name" required>
+          <div ng-messages="vm.form.postForm.name.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Post name is required.</p>
+          </div>
+        </div>
+
+        <div class="form-group" show-errors>
+          <label class="control-label" for="desc">Post Description</label>
+          <input name="desc" type="text" ng-model="vm.post.desc" id="desc" class="form-control" placeholder="Desc" required>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">{{vm.post._id ? 'Update' : 'Create'}}</button>
+        </div>
+        <div ng-show="vm.error" class="text-danger">
+          <strong ng-bind="vm.error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>
