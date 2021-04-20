@@ -4,9 +4,9 @@
     "\\modules",
     "\\modules\\tickets",
     "\\modules\\tickets\\client",
-    "\\modules\\tickets\\server",
+    "\\modules\\tickets\\client\\controllers",
     "\\modules\\tickets\\server\\policies"
   ],
-  "SelectedNode": "\\modules\\tickets\\server\\policies\\tickets.server.policy.js",
+  "SelectedNode": "\\modules\\tickets\\client\\controllers\\tickets.client.controller.js",
   "PreviewInSolutionExplorer": false
 }

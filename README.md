@@ -1,2 +1,2 @@
-# Mathlab
-COMP3000 Final Year Project - Mathlab 
+# MathBuds
+COMP3000 Final Year Project - MathBuds 
