@@ -33,6 +33,21 @@
         controller: 'HomeController',
         controllerAs: 'vm'
       })
+    $stateProvider
+      .state('pyth', {
+        url: '/',
+        templateUrl: '/modules/maths/client/pyth.html',
+        controller: 'PythController',
+        controllerAs: 'vm'
+      })
+    $stateProvider
+      .state('quad', {
+        url: '/',
+        templateUrl: '/modules/maths/client/quad.html',
+        controller: 'QuadController',
+        controllerAs: 'vm'
+      })
+
       .state('not-found', {
         url: '/not-found',
         templateUrl: '/modules/core/client/views/404.client.view.html',

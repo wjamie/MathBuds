@@ -6,7 +6,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a ui-sref="home" class="navbar-brand">MathLab Home</a>
+    <a ui-sref="home" class="navbar-brand">MathBuds Home</a>
   </div>
   <nav class="navbar-collapse" uib-collapse="!vm.isCollapsed" role="navigation">
     <ul class="nav navbar-nav" ng-if="vm.menu.shouldRender(vm.authentication.user);">
@@ -20,6 +20,9 @@
         <a ng-switch-default ui-sref="{{item.state}}" ng-bind="item.title"></a>
       </li>
     </ul>
+    <a href="/modules/maths/client/pyth.html" target="_blank" class="navbar-brand">Pythagoras</a>
+    <a href="/modules/maths/client/quad.html" target="_blank" class="navbar-brand">Quadratics</a>
+
     <ul class="nav navbar-nav navbar-right" ng-hide="vm.authentication.user">
       <li ui-sref-active="active">
         <a ui-sref="authentication.signup">Sign Up</a>
