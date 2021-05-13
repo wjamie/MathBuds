@@ -2,15 +2,17 @@
   "ExpandedNodes": [
     "",
     "\\modules",
-    "\\modules\\tickets\\client\\controllers",
-    "\\modules\\tickets\\server\\config",
-    "\\modules\\tickets\\server\\models",
-    "\\modules\\tickets\\server\\routes",
-    "\\modules\\tickets\\tests\\client",
-    "\\modules\\tickets\\tests\\e2e",
-    "\\modules\\tickets\\tests\\server",
-    "\\modules\\users\\client"
+    "\\modules\\chat\\client",
+    "\\modules\\chat\\client\\controllers",
+    "\\modules\\core",
+    "\\modules\\core\\client",
+    "\\modules\\core\\client\\config",
+    "\\modules\\core\\client\\controllers",
+    "\\modules\\core\\client\\views",
+    "\\modules\\users\\server",
+    "\\modules\\users\\server\\controllers",
+    "\\modules\\users\\server\\controllers\\users"
   ],
-  "SelectedNode": "\\modules\\tickets",
+  "SelectedNode": "\\modules\\core\\client\\views\\quad.html",
   "PreviewInSolutionExplorer": false
 }

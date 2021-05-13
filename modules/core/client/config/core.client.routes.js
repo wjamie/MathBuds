@@ -36,14 +36,14 @@
     $stateProvider
       .state('pyth', {
         url: '/',
-        templateUrl: '/modules/maths/client/pyth.html',
+        templateUrl: '/modules/core/client/views/pyth.html',
         controller: 'PythController',
         controllerAs: 'vm'
       })
     $stateProvider
       .state('quad', {
         url: '/',
-        templateUrl: '/modules/maths/client/quad.html',
+        templateUrl: '/modules/core/client/views/quad.html',
         controller: 'QuadController',
         controllerAs: 'vm'
       })

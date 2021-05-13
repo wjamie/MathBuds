@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Quadratic Equation Solver</title>
+</head>
+<body style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+
+  <h1 style="font-size:26px">Welcome to the MathBuds Quadratic Equation Helper!</h1>
+
+  <div id="calculator" style="width: 600px; height: 400px;"></div>
+  <p></p>
+  A=<input type="number" id="inpA"  min="-999" max="999">
+  B=<input type="number" id="inpB"  min="-999" max="999">
+  C=<input type="number" id="inpC"  min="-999" max="999">
+  <input type="submit" id="btnSubmit" onclick="equate()">
+  <p id="textOut" style="font-size:22px">Answer will display here</p>
+
+
+</body>
+</html>
+<script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+<script>
+  var elt = document.getElementById('calculator');
+  var calculator = Desmos.GraphingCalculator(elt);
+  calculator.setExpression({ id: 'graph1', latex: 'y=x^2' });
+
+  function equate() {
+    var inpA = parseInt(document.getElementById('inpA').value);
+    var inpB = parseInt(document.getElementById('inpB').value);
+    var inpC = parseInt(document.getElementById('inpC').value);
+    var textOut = document.getElementById('textOut').value;
+
+    var Equation = "y=" + inpA + "x^2" + "+" + inpB + "x" + "+" + inpC;
+
+    if (isNaN(inpA) || isNaN(inpB) || isNaN(inpC)) { 
+      document.getElementById('textOut').innerHTML = "Please insert a value for A, B and C";
+      return false;
+
+    }
+    else {
+
+      console.log(Equation);
+      console.log(inpA);
+      textOut == Equation;
+    // document.getElementById('test1').innerHTML = "Answer = " + Equation;
+    
+      calculator.setExpression({ id: 'graph1', latex: Equation });
+
+      document.getElementById('textOut').innerHTML = answers(inpA, inpB, inpC);
+   // document.write(answers(inpA, inpB, inpC));
+    }
+  }
+
+  function answers(inpA, inpB, inpC) {
+    var result = (-1 * inpB + Math.sqrt(Math.pow(inpB, 2) - (4 * inpA * inpC))) / (2 * inpA);
+    var result2 = (-1 * inpB - Math.sqrt(Math.pow(inpB, 2) - (4 * inpA * inpC))) / (2 * inpA);
+
+    if (isNaN(result || result2) == true)
+    {
+      return "As you can see from the graph above, this quadratic doesn't cross the x-axis, therefore it has no real roots. <p> If you want to see some real roots, try lowering the value of C";
+     
+    }
+    else {
+      return "The quadratic crosses the x-axis at the co-ordinates: <p>" + "x = " + result + "<br>" + "x = " + result2;
+    }
+  
+  }
+  
+
+
+</script>

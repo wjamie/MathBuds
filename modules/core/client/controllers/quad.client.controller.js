@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('maths')
+    .module('core')
     .controller('QuadController', QuadController);
 
   function QuadController() {
