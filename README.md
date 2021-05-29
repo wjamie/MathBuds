@@ -77,7 +77,11 @@ Use the web application by typing http://localhost:3000/ into your browser.
 ### Use the live chat to help other students!
 ![live chat screenshot](https://i.imgur.com/PeNOtxc.png)
 
+### Express yourself with a custom profile picture! 
+![account screenshot](https://i.imgur.com/ijO4VWJ.png)
+
 ### Create a unique and secure account 
 ![account screenshot](https://i.imgur.com/AJUgjzN.png)
+
 
 
